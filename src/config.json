@@ -1,15 +1,15 @@
 {
   "api": {
-    "host" : "default"
+    "host": "default"
   },
   "resources": {
-    "host_thumbnails" : "http://10.34.58.178/V3C1/V3C1jpg/:o/:s.jpg",
+    "host_thumbnails": "http://10.34.58.178/V3C1/V3C1jpg/:o/:s.jpg",
     "host_objects": "http://10.34.58.178/V3C1/video/:o.mp4"
   },
   "competition": {
     "teamid": 2,
     "toolid": 1,
-    "endpoint": "https://interactivevideoretrieval.com/",
+    "endpoint": "https://dmi-dres.dmi.unibas.ch:8443/",
     "log": false,
     "lsc": false,
     "vbs": false,
@@ -33,23 +33,61 @@
     },
     "text": {
       "categories": [
-        ["ocr", "Text on Screen"],
-        ["asr", "Audio"],
-        ["scenecaption", "Description"]
+        [
+          "ocr",
+          "Text on Screen"
+        ],
+        [
+          "asr",
+          "Audio"
+        ],
+        [
+          "scenecaption",
+          "Description"
+        ]
       ]
     },
     "boolean": [
-      ["Example Freetext", "TEXT", "features_daily.text"],
-      ["Example Dropdown", "OPTIONS", "features.option", "ONE", "TWO", "THREE"],
-      ["Example Range", "RANGE", "features.range", 5, 20],
-      ["Example Dynamic Options", "DYNAMICOPTIONS", "features.option", "features", "option"]
+      [
+        "Example Freetext",
+        "TEXT",
+        "features_daily.text"
+      ],
+      [
+        "Example Dropdown",
+        "OPTIONS",
+        "features.option",
+        "ONE",
+        "TWO",
+        "THREE"
+      ],
+      [
+        "Example Range",
+        "RANGE",
+        "features.range",
+        5,
+        20
+      ],
+      [
+        "Example Dynamic Options",
+        "DYNAMICOPTIONS",
+        "features.option",
+        "features",
+        "option"
+      ]
     ],
     "staged": true
   },
   "refinement": {
     "filters": [
-      ["dominantcolor.color", "CHECKBOX"],
-      ["technical.duration", "SLIDER"]
+      [
+        "dominantcolor.color",
+        "CHECKBOX"
+      ],
+      [
+        "technical.duration",
+        "SLIDER"
+      ]
     ]
   }
 }
